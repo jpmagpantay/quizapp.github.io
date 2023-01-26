@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: #009688;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .container {
+    width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out;
+    animation-fill-mode: both;
+  }
+  .center-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .create-account-container a:last-of-type {
+    margin-left: 20px;
+}
+
+/* Keyframe animation to fade-in the container */
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  .fade-in {
+    animation-name: fade-in;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  label, input {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="date"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 15px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #009688;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #009688;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+  }
+
+  .create-account-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+  a {
+    color: #009688;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Media Queries */
+@media (max-width: 600px) {
+    .container {
+      width: 90%;
+      margin: 50px auto;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    label {
+      font-size: 18px;
+    }
+   input[type="text"],
+   input[type="password"],
+   input[type="email"],
+   input[type="date"],
+   input[type="tel"] {
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      font-size: 18px;
+    }
+  }
+  
+.center-container a {
+    margin-top: 15px;
+  }
+
+.center-container #loginLink {
+    margin-top: 0px;
+  }
+
+.center-container p {
+    margin-top: 15px;
+  }
+
+
+.question-img {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .question-img {
+        max-width: 100%;
+    }
+}
+
+
+

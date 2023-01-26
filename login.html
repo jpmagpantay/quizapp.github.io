@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="center-container">
+				<form onsubmit="return handleFormSubmit(event)">
+					<h1>Login</h1>
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required="" />
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required="" />
+					<input type="submit" value="Login" />
+					<div class="create-account-container">
+						<a href="createAccount.html">Create an Account</a>
+						<a href="forgotPassword.html">Forgot Password</a>
+					</div>
+				</form>
+			</div>
+			<br /><br /><br />
+			<p style="text-align: center; font-size: 14px">
+				Copyright &copy;
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				<br />
+				2/OFF John Paulo Magpantay<br />All Rights Reserved.
+			</p>
+		</div>
+	</body>
+</html>
