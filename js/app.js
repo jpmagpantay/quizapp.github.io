@@ -5,7 +5,7 @@
  const homeBox = document.querySelector(".home-box");
  const quizBox = document.querySelector(".quiz-box");
  const resultBox = document.querySelector(".result-box");
- const questionLimit = quiz.length; // if you want all questions "quiz.length"
+ const questionLimit = 50; // if you want all questions "quiz.length"
  let questionCounter = 0;
  let currentQuestion;
  let availableQuestions = [];
